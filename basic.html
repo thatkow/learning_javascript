@@ -4,10 +4,21 @@
 <head>
   <title>Hello, World!</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <script type="text/javascript" src="helloworld.js">
+  <script type="text/javascript">
+  //<![CDATA[
+  function hello() {
+    // say hello to the world
+    var msg = "Hello, <em>World!</em>";
+    document.open();
+    document.write(msg);
+    document.close();
+  }
+  //]]>
   </script>
 </head>
 <body onload="hello()">
-  <p>Hi</p>
+  <noscript>
+    <p>I'm still here, World!</p>
+  </noscript>
 </body>
 </html>
