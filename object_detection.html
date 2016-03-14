@@ -20,18 +20,22 @@
     //<![CDATA[
     window.onload=function() {
       document.getElementById("div1").onclick=getSrc;
+
     }
     function getSrc(evnt) {
 
       var theEvent = evnt ? evnt : window.event;
+        theEvent.target.style.opacity=0.5;
       var theSrc = theEvent.target ? theEvent.target : theEvent.srcElement;
       alert(theSrc.src);
+      theEvent.target.style.opacity=1;
     }
     //]]>
     </script>
   </head>
   <body>
     <div id="div1">
+      <img src="magic.png"  />
       <img src="magic.png"  />
     </div>
   </body>
