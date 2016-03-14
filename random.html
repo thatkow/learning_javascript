@@ -13,11 +13,12 @@
     quoteArray[2] = "Quote three";
     quoteArray[3] = "Quote four";
     quoteArray[4] = "Quote five";
+
+    iValue = Math.random(); // random number between 0 and 1
+    iValue *= 5; // multiply by 5 to move the decimal
+    iValue = Math.floor(iValue); // round to nearest integer
+    alert(quoteArray[iValue]);
   }
-  iValue = Math.random(); // random number between 0 and 1
-  iValue *= 5; // multiply by 5 to move the decimal
-  iValue = Math.floor(iValue); // round to nearest integer
-  alert(quoteArray[iValue]);
   //]]>
   </script>
 </head>
